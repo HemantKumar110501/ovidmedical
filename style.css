@@ -33,9 +33,15 @@ body {
     gap: 35px;
 }
 
-li {
+.nav-mid-content li {
     list-style: none;
+    font-family: "Barlow",sans-serif;
     font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    
+
+    color: #262626;
 }
 
 
@@ -142,21 +148,46 @@ li {
     transform: rotate(44deg);
 }
 
+.carousel-counter{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+
+    color: #ffffff;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    z-index: 5;
+}
+
+
 
 .carousel-buttons-wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 24px;
   
-    max-width: 50px;
+    /* max-width: 50px; */
     position: absolute;
-    left: 90%;
+    left: 87%;
     top: 90%;
-
 }
 
+.carousel-buttons-wrapper .next-button-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 .carousel-buttons-wrapper .carousel-control-prev{
-    background-color: red;
+    /* background-color: red; */
     width: 30px;
     height: 30px;
     position: static;
@@ -165,26 +196,78 @@ li {
 }
 
 .carousel-buttons-wrapper .carousel-control-next{
-    background-color: springgreen;
+    /* background-color: springgreen; */
     width: 30px;
     height: 30px;
     position: static;
-   
+ 
 }
 
 .carousel-control-prev-icon {
     background-image: url(assets/images/Prev_Arrow.svg);
+
+    width: 18px;
+    height: 20px;
 }
 
 .carousel-control-next-icon {
     background-image: url(assets/images/Next_Arrow.svg);
+
+    max-width: 18px;
+    max-height: 20px;
+
+    position: relative;
+    z-index: 2;
+
+}
+
+
+/* css for that progress on next-icon */
+
+.progress-btn{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-ring{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+
+    pointer-events: none;
+}
+
+.progress-bg{
+    fill: none;
+    stroke: rgba(255,255,255,0.2);
+    stroke-width: 3;
+}
+
+.progress-bar{
+    fill: none;
+    stroke: #4FC5F2; /* blue color */
+    stroke-width: 3;
+    stroke-linecap: round;
+
+    stroke-dasharray: 126;  /* full circle */
+    stroke-dashoffset: 126; /* start empty */
+
+    transition: stroke-dashoffset 0.5s ease;
 }
 
 
 
 
 
-/* ======= Revolutionary wla  ========= */
+/*@@ ======= Revolutionary wla  =========@@ */
 .revolutionary-laser {
     display: flex;
     flex-direction: column;
@@ -210,7 +293,7 @@ li {
 .revolutionary-laser-left h1 {
     font-family: "Sora",sans-serif;
     font-weight: 700;
-    font-style: Bold;
+    
     font-size: 60px;
     line-height: 120%;
     letter-spacing: -0.5px;
@@ -247,19 +330,12 @@ li {
 
 
 .revolutionary-learnmorebtn {
-    border-radius: 8px;
     padding: 18px 24px;
+    border-radius: 8px;
     background-color: #1E72BE;
     max-width: 200px;
     width: 100%;
     border: none;
-
-    
-    font-size: 20px;
-    line-height: 16px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    
 
     display: flex;
     flex-direction: row;
@@ -267,8 +343,23 @@ li {
     align-items: center;
 
 }
+
 .revolutionary-learnmorebtn:hover{
     background-color: #4FC5F2;
+}
+
+.revolutionary-learnmorebtn .revolutionary-learnmorebtn-text{
+    display: inline-block;
+    transition: transform 0.3s ease;
+
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.revolutionary-learnmorebtn:hover .revolutionary-learnmorebtn-text{
+    transform: translateX(3px);
 }
 
 .revolutionary-button-wrapper button img{
@@ -301,6 +392,7 @@ li {
     gap: 10px;
     
 }
+
 .revolutionary-contactusbtn img{
     width: 12px;
     height: 12px;
@@ -324,9 +416,12 @@ li {
 .enhance-your-outer-container {
     width: 90%;
     gap: 60px;
-    padding: 60px 80px;
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+
     margin: auto;
-    /* background: cyan; */
+    background: cyan;
     text-align: center;
 
     display: flex;
@@ -338,6 +433,10 @@ li {
 .enhance-your-top-container{
     margin: auto;
     width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 /* TOP SECTION */
@@ -346,7 +445,7 @@ li {
     font-size: 48px;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 10px;
+
     line-height: 56px;
     letter-spacing: 0px;
 }
@@ -358,17 +457,18 @@ li {
     line-height: 150%;
     letter-spacing: 0.15px;
     color: #000000;
-    /* max-width: 600px; */
-    margin: 0 auto 50px;
+    max-width: 832px;
+    width: 100%;
+
+    margin: auto;
 }
 
 /* MID CONTAINER */
 .enhance-your-mid-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    min-height: 530px;
 }
 
 /* LEFT + RIGHT COMMON */
@@ -378,9 +478,9 @@ li {
     width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 70px;
-    /* background: tomato; */
-    min-height: 500px;
+   
 }
 
 /* EACH BLOCK */
@@ -389,7 +489,12 @@ li {
 .enhance-your-mid-right-upper,
 .enhance-your-mid-right-bottom {
     text-align: center;
-    /* min-height: 190px; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    background-color: tomato;
 }
 
 .enhance-your-mid-right-upper,
@@ -398,19 +503,22 @@ li {
 }
 
 .enhance-your-mid-container h2 {
+    font-family: "Barlow",sans-serif;
     margin-bottom: 10px;
     font-weight: 700;
+    font-style: Bold;
     font-size: 28px;
     line-height: 32px;
     letter-spacing: 0.18px;
 }
 
 .enhance-your-mid-container p {
+    font-family: "Barlow",sans-serif;
+    font-weight: 400;
     font-size: 20px;
-    color: #000000;
     line-height: 150%;
     letter-spacing: 0.15px;
-    font-weight: 400;
+    color: #000000;
 }
 
 /* the centre circle */
@@ -436,7 +544,6 @@ li {
 
 .enhance-your-mid-mid-image img {
     width: 100%;
-    min-height: 100px;
     min-width: 730px;
 
 }
@@ -707,6 +814,8 @@ li {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.15px;
+
+    color: #000000;
 }
 
 .item-box .item-top-box .item-learnmore-btn{

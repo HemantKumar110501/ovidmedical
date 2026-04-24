@@ -88,6 +88,11 @@
                 </div>
             </div>
         </div>
+
+        <div class="carousel-counter">
+            <span id="currentSlide">1</span>/<span id="totalSlides">3</span>
+        </div>
+
         <div class="carousel-buttons-wrapper">
             <div class="prev-button-container">
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -97,8 +102,14 @@
             </div>
 
             <div class="next-button-container">
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                <button class="carousel-control-next progress-btn" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
+
+                    <svg class="progress-ring" width="50" height="50">
+                        <circle class="progress-bg" cx="25" cy="25" r="20"></circle>
+                        <circle class="progress-bar" cx="25" cy="25" r="20"></circle>
+                    </svg>
+
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
             </div>
@@ -126,7 +137,7 @@
                     exceptional results for our clients.</p>
                 <div class="revolutionary-button-wrapper">
                     <button class="revolutionary-learnmorebtn">
-                        Learn More
+                        <span class="revolutionary-learnmorebtn-text">Learn More</span>
                         <img src="./assets/images/Indicator_Arrow.svg" alt="">
                     </button>
                     <button class="revolutionary-contactusbtn">Contact Us
@@ -611,7 +622,7 @@
                     </div>
 
                 </div>
-                
+
             </div>
         </div>
 
@@ -635,6 +646,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
