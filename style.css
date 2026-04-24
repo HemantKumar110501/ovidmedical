@@ -421,7 +421,7 @@ body {
     padding-bottom: 80px;
 
     margin: auto;
-    background: cyan;
+    /* background: cyan; */
     text-align: center;
 
     display: flex;
@@ -494,7 +494,7 @@ body {
     flex-direction: column;
     gap: 28px;
 
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 .enhance-your-mid-right-upper,
