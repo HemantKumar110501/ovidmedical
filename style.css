@@ -588,7 +588,15 @@ button{
     display: flex;
     justify-content: space-between;
     gap: 2px;
+
+    cursor: pointer;
 }
+
+.enhance-your-bottom .enhance-your-bottom-learnmore-btn:hover a{
+    transform: translate(4px);
+}
+
+
 
 .enhance-your-bottom-learnmore-btn a{
     font-family: "Barlow",sans-serif;
@@ -1192,6 +1200,8 @@ button{
     align-items: center;
     gap: 12px;
 
+    cursor: pointer;
+
 }
 
 .support-bottom-learnmore-btn:hover{
@@ -1225,6 +1235,8 @@ button{
 
     background-color: #ffffff;
     gap: 12px;
+
+    cursor: pointer;
 }
 
 .support-bottom .support-bottom-contactus-btn a{
@@ -1367,7 +1379,7 @@ button{
     align-items: center;
 
     gap: 12px;
-
+    cursor: pointer;
 }
 
 .upper-right-btn-wrapper .upper-right-learnmore-btn a{
@@ -1419,6 +1431,8 @@ button{
     justify-content: center;
     align-items: center;
     gap: 12px;
+
+    cursor: pointer;
 }
 
 .upper-right-btn-wrapper .upper-right-contactus-btn:hover{
