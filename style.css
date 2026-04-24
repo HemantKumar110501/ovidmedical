@@ -9,6 +9,9 @@ body {
     font-family: "Barlow", sans-serif;
 }
 
+button{
+    cursor: pointer;
+}
 /* Navbar */
 
 .navbar2 {
@@ -755,7 +758,7 @@ body {
 .item-1 .img-box{
     position: absolute;
 
-    top: 30%;
+    top: 34%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -819,6 +822,8 @@ body {
 }
 
 .item-box .item-top-box .item-learnmore-btn{
+    cursor: pointer;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -901,7 +906,7 @@ body {
 /* Specific size for every image in the grid of explore-our-cutting-edge */
 .explore-our-cutting-mid-items .item-1 .img-box img{
     width: 402px;
-    height: 484.83px;
+    height: 450.83px;
    
 }
 .explore-our-cutting-mid-items .item-2 .img-box img{
@@ -1782,7 +1787,8 @@ body {
 .footer-top-right-content .social-box{
     display: flex;
     flex-direction: row;
-    
+
+    cursor: pointer;
     gap: 20px;
 }
 
