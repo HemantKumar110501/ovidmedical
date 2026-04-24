@@ -497,7 +497,8 @@ button{
     display: flex;
     flex-direction: column;
     gap: 28px;
-
+    max-width: 404px;
+    width: 100%;
     /* background-color: tomato; */
 }
 
@@ -508,12 +509,13 @@ button{
 
 .enhance-your-mid-container h2 {
     font-family: "Barlow",sans-serif;
-    margin-bottom: 10px;
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
     line-height: 32px;
     letter-spacing: 0.18px;
+
+    margin: 0px;
 }
 
 .enhance-your-mid-container p {
@@ -523,6 +525,7 @@ button{
     line-height: 150%;
     letter-spacing: 0.15px;
     color: #000000;
+    margin: 0px;
 }
 
 /* the centre circle */
@@ -533,7 +536,7 @@ button{
     border-radius: 50%;
     margin: auto;
     align-content: center;
-    margin-bottom: 28px;
+
 }
 
 
@@ -549,6 +552,8 @@ button{
 .enhance-your-mid-mid-image img {
     width: 100%;
     min-width: 730px;
+    /* max-width: 730px; */
+    height: auto;
 
 }
 
