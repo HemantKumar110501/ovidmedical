@@ -25,7 +25,7 @@ carousel.addEventListener('slid.bs.carousel', function (e) {
 
 // const items = carousel.querySelectorAll('.carousel-item');
 // totalSlides.textContent = items.length;
-
+ 
 // ✅ circle setup
 const progressBar = document.querySelector('.progress-bar');
 const total = items.length;

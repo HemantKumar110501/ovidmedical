@@ -691,13 +691,13 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 80px;
 }
 
 
 .explore-our-cutting-outer-container .explore-our-cutting-heading{
 
-    width: 50%;
+    max-width: 832px;
 
     display: flex;
     flex-direction: column;
@@ -733,7 +733,6 @@ button{
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     
-    /* max-width: 1890px; */
     max-width: 1858px;
     width: 100%;
 
@@ -853,6 +852,10 @@ button{
     background-color: #4FC5F2;
 }
 
+.item-box .item-top-box .item-learnmore-btn:hover a{
+    transform: translateX(3px);
+}
+
 .item-box .item-top-box .item-learnmore-btn:hover img{
     transform: rotate(44deg);
 }
@@ -965,36 +968,40 @@ button{
 .discover-how-top {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
     margin-bottom: 40px;
 }
 
 /* LEFT */
 .discover-how-top-left {
-    width: 50%;
+    width: 45%;
 }
 
 .discover-how-top-left h2 {
-    font-size: 48px;
+    
+    font-family: "Sora",sans-serif;
     font-weight: 700;
+    font-size: 48px;
     line-height: 56px;
     letter-spacing: 0px;
+    color: #000000;
 }
 
 /* RIGHT */
 .discover-how-top-right {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .discover-how-top-right p {
-    font-size: 20px;
+    font-family: "Barlow",sans-serif;
     font-weight: 400;
-    color: #000000;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.15px;
+    color: #000000;
 }
 
 /* FEATURES */
@@ -1005,22 +1012,34 @@ button{
 
 .feature {
     width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
+/* .feature-image{
+    margin-bottom: 10px;
+} */
+
 .feature h3 {
-    font-size: 28px;
+    font-family: "Barlow",sans-serif;
     font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
     line-height: 32px;
     letter-spacing: 0.18px;
-    margin-bottom: 5px;
+    color: #000000;
+
+    margin: 0px;
 }
 
 .feature p {
     font-size: 20px;
     font-weight: 400;
-    color: #000000;
     line-height: 150%;
     letter-spacing: 0.15px;
+    color: #000000;
 }
 
 /* IMAGE */
