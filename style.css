@@ -449,6 +449,7 @@ button{
     font-size: 48px;
     font-weight: 700;
     color: #000000;
+    margin: 0px;
 
     line-height: 56px;
     letter-spacing: 0px;
@@ -559,7 +560,7 @@ button{
 
 /* BOTTOM BUTTONS */
 .enhance-your-bottom {
-    margin-top: 50px;
+
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -574,13 +575,6 @@ button{
     transition: 0.3s;
 }
 
-/* buttons for enhance-your */
-.enhance-your-bottom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
 
 .enhance-your-bottom .enhance-your-bottom-learnmore-btn{
     max-width: 174px;
@@ -739,7 +733,8 @@ button{
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     
-    max-width: 1890px;
+    /* max-width: 1890px; */
+    max-width: 1858px;
     width: 100%;
 
 }
