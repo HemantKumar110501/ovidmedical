@@ -18,13 +18,6 @@ carousel.addEventListener('slid.bs.carousel', function (e) {
 
 
 // Js for that progress bar on next-icon
-
-// const carousel = document.querySelector('#carouselExample');
-// const currentSlide = document.getElementById('currentSlide');
-// const totalSlides = document.getElementById('totalSlides');
-
-// const items = carousel.querySelectorAll('.carousel-item');
-// totalSlides.textContent = items.length;
  
 // ✅ circle setup
 const progressBar = document.querySelector('.progress-bar');
@@ -50,4 +43,18 @@ carousel.addEventListener('slid.bs.carousel', function (e) {
     // ✅ update ring
     updateProgress(index);
 });
+
+
+
+
+
+// HAMBURGER
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-mid-content");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+
 
