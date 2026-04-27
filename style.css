@@ -1393,7 +1393,7 @@ img{
     
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 70px;
 
     overflow: hidden;
 
@@ -1563,6 +1563,8 @@ img{
     border-left: 2px solid #ffffff;
 
     padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .overlay-lower-half > .lower-left > h2,

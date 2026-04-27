@@ -915,7 +915,7 @@
     }
 
     .overlay-video .overlay-content-box {
-        gap: 40px;
+        gap: 50px;
     }
 
     .overlay-content-box .overlay-upper-half {
@@ -966,7 +966,7 @@
     }
 
     .overlay-video .overlay-content-box {
-        gap: 20px;
+        gap: 30px;
     }
 
     .overlay-content-box .overlay-upper-half {
@@ -1033,7 +1033,7 @@
 
     .overlay-video .overlay-content-box {
         padding: 0 20px;
-        gap: 10px;
+        gap: 30px;
     }
 
     .overlay-upper-half .overlay-upper-right {
@@ -1141,7 +1141,7 @@
     .overlay-lower-half>.lower-left>h2,
     .overlay-lower-half>.lower-mid>h2,
     .overlay-lower-half>.lower-right>h2 {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 20px;
         padding: 0%;
         padding-bottom: 10px;
@@ -1150,8 +1150,8 @@
     .overlay-lower-half>.lower-left>p,
     .overlay-lower-half>.lower-mid>p,
     .overlay-lower-half>.lower-right>p {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 18px;
     }
 
     .overlay-upper-right .upper-right-btn-wrapper {
