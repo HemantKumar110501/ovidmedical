@@ -1166,7 +1166,8 @@
         /* max-width: 100px; */
         max-width: 100%;
         max-height: auto;
-        width: 60%;
+        /* width: 60%; */
+
         padding: 10px;
 
         gap: 10px;
@@ -1174,7 +1175,7 @@
     }
 
     .upper-right-btn-wrapper .upper-right-learnmore-btn a {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .upper-right-btn-wrapper .upper-right-learnmore-btn img {
@@ -1187,7 +1188,7 @@
         padding: 10px;
         max-width: 100%;
         max-height: auto;
-        width: 60%;
+        /* width: 60%; */
 
         gap: 10px;
 
@@ -1195,7 +1196,7 @@
     }
 
     .upper-right-btn-wrapper .upper-right-contactus-btn a {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .upper-right-btn-wrapper .upper-right-contactus-btn img {
