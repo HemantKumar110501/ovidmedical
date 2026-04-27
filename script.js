@@ -1,4 +1,4 @@
-// Counter System for my carousel(at bottom left corner of the carousel) 
+//! Counter System for my carousel(at bottom left corner of the carousel) 
 
 const carousel = document.querySelector('#carouselExample');
 const currentSlide = document.getElementById('currentSlide');
@@ -13,11 +13,10 @@ carousel.addEventListener('slid.bs.carousel', function (e) {
     currentSlide.textContent = e.to + 1;
 });
 
-// ======= carousel counter ends ======== // 
+// ======= carousel counter ends here ======== // 
 
 
-
-// Js for that progress bar on next-icon
+//! Js for that progress bar on next-icon
  
 // ✅ circle setup
 const progressBar = document.querySelector('.progress-bar');
@@ -48,12 +47,16 @@ carousel.addEventListener('slid.bs.carousel', function (e) {
 
 
 
-// HAMBURGER
+//! HAMBURGER
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-mid-content");
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
+
+
+    // FOR LOCK SCREEN TILL WHEN THE NAV SIDEBAR IS OPEN
+    document.body.classList.toggle("no-scroll");
 });
 
 
