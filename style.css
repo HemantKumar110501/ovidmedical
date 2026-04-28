@@ -29,7 +29,7 @@ img{
 .navbar2 {
     position:relative;
     z-index: 1002;
-
+    margin: auto;
 
     width: 100%;
     
@@ -125,6 +125,7 @@ img{
 
 .slide .carousel-inner .carousel-item video{
     width: 100%;
+    
     /* height: calc(100vh - 110px); */
     height: 100vh;
     object-fit: cover;
@@ -335,7 +336,9 @@ img{
     width: 100%;
     
     /* max-width: 1600px; */
-    /* max-width: 1900px; */
+    max-width: 1900px;
+    align-items: center;
+    justify-content: center;
 
     margin: 0 auto;
 
@@ -512,14 +515,15 @@ img{
     padding-top: 80px;
     padding-bottom: 80px;
 
-    margin: auto;
+    margin: 0 auto;
     /* background: cyan; */
     text-align: center;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    
 }
 
 .enhance-your-top-container{
@@ -1044,6 +1048,8 @@ img{
 /* ===== OUTER ===== */
 .discover-how-outer-container {
     width: 100%;
+    max-width: 1900px;
+    margin: auto;
     padding: 80px 160px;
     background: #ffffff;
 }
@@ -1142,6 +1148,7 @@ img{
 
 .support-outer {
     width: 100%;
+    margin: auto;
     padding-top: 80px;
     padding-bottom: 120px;
     padding-left: 160px;
@@ -1607,8 +1614,12 @@ img{
 /*======== Connect With ========*/
 
 .connect-with-outer-container{
+    max-width: 1900px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     padding: 80px 160px 80px 160px;
 
@@ -1736,7 +1747,8 @@ img{
 /* @@@@@@@@@@@  FOOTER ========= */
 
 .footer-container {
-    /* max-width: 1920px; */
+    /* max-width: 1900px; */
+    margin: auto;
     width: 100%;
     padding: 80px 160px 80px 160px;
 
@@ -1744,6 +1756,7 @@ img{
 
     display: flex;
     flex-direction: column;    
+    align-items: center;
     gap: 60px;
 }
 
