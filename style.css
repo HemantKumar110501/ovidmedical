@@ -27,6 +27,7 @@ img{
 /*@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@*/
 
 .navbar2 {
+    max-width: 1900px;
     position:relative;
     z-index: 1002;
     margin: auto;
