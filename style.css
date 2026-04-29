@@ -132,8 +132,8 @@ img{
 .slide .carousel-inner .carousel-item video{
     width: 100%;
     
-    /* height: calc(100vh - 110px); */
-    height: 95vh;
+    height: calc(100vh - 110px);
+    /* height: 95vh; */
     object-fit: cover;
 }
 
