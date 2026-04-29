@@ -1,5 +1,14 @@
 /*++++ NAVBAR RESPONSIVENESS++++++ */
+/* NAVBAR LARGE <= 1250px */
+@media (max-width: 1250px) {
+    .navbar2 {
+        padding: 18px 80px;
+        align-items: center;
+    }
+}
 
+
+/* NAVBAR TABLET <= 992PX */
 @media (max-width: 992px) {
 
     .navbar2 {
@@ -8,13 +17,24 @@
 
         padding-left: 50px;
         padding-right: 50px;
-        padding-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-height: 60px;
+
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-container {
         position: relative;
+        /* padding: 0px; */
 
         align-items: center;
+    }
+
+    .navbar2 .nav-container .nav-logo img {
+        width: 60px;
+        height: 40px;
     }
 
     /* SHOW HAMBURGER */
@@ -31,7 +51,7 @@
         /* 👈 screen ke bahar hide */
 
         /* min-height: 100vh; */
-        min-height: 70vh;
+        /* min-height: 70vh; */
         width: 260px;
 
         background: white;
@@ -77,7 +97,7 @@
     }
 
 
-    .nav-mid-content li{
+    .nav-mid-content li {
         font-size: 16px;
     }
 }
@@ -85,6 +105,12 @@
 
 /* NAV SIDEBAR MOBILE <= 768PX */
 @media (max-width: 768px) {
+
+    .navbar2 .nav-container .nav-logo img {
+        width: 40px;
+        height: 30px;
+    }
+
     .nav-mid-content li {
         font-size: 16px;
     }
@@ -125,6 +151,37 @@
 
 
 /*++++++++++ Carousel Responsive  +++++++++++ */
+/* CAROUSEL LARGE<= 1440 */
+@media (max-width:1440px) {
+
+    .carousel-context-box {
+        gap: 20px;
+    }
+
+    .carousel-context-box h2 {
+        font-size: 45px;
+    }
+
+    .carousel-context-box p {
+        font-size: 20px;
+    }
+}
+
+/* CAROUSEL Laptop <= 1260 */
+@media (max-width:1260px) {
+
+    .carousel-context-box {
+        gap: 15px;
+    }
+
+    .carousel-context-box h2 {
+        font-size: 40px;
+    }
+
+    .carousel-context-box p {
+        font-size: 18px;
+    }
+}
 
 /* CAROUSEL TABLET <= 992px */
 @media (max-width: 992px) {
@@ -134,15 +191,20 @@
     }
 
     .carousel-context-box h2 {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .carousel-context-box p {
-        font-size: 22px;
+        font-size: 14px;
     }
 
     .carousel-context-box {
-        gap: 20px;
+        gap: 0px;
+    }
+
+    .carousel-context-box button {
+        padding: 9px 9px;
+        font-size: 15px;
     }
 
     .carousel-buttons-wrapper {
@@ -171,13 +233,12 @@
     }
 
     .carousel-context-box h2 {
-        font-size: 28px;
-        line-height: 100%;
-        margin-bottom: 0px;
+        font-size: 24px;
+        line-height: 120%;
     }
 
     .carousel-context-box p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .carousel-context-box button {
@@ -211,11 +272,11 @@
     }
 
     .carousel-context-box p {
-        font-size: 14px;
+        font-size: 8px;
     }
 
     .carousel-context-box button {
-        font-size: 14px;
+        font-size: 10px;
         max-width: 140px;
     }
 
@@ -241,10 +302,46 @@
 
 /* REVOLUTIONARY LARGE SCREEN <= 1440px */
 @media (max-width: 1440px) {
+
+    .revolutionary-laser {
+        gap: 40px;
+    }
+
     .revolutionary-button-wrapper {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 20px;
     }
+
+
+    .revolutionary-learnmorebtn {
+        padding: 14px 20px;
+        max-width: 160px;
+
+    }
+
+    .revolutionary-contactusbtn {
+        padding: 14px 20px;
+        max-width: 140px;
+        white-space: nowrap;
+        /* width: 100%; */
+    }
+
+    .revolutionary-laser-right {
+        gap: 20px;
+    }
+
+    .revolutionary-laser-left h1 {
+        font-size: 48px;
+    }
+
+    .revolutionary-laser-right p {
+        font-size: 20px;
+    }
+
+    .revolutionary-laser img {
+        margin-top: 0px;
+    }
+
 }
 
 
@@ -254,9 +351,21 @@
 
     .revolutionary-laser {
         padding: 60px 80px;
-        gap: 60px;
+        gap: 30px;
     }
 
+
+    .revolutionary-laser-left h1 {
+        font-size: 40px;
+    }
+
+    .revolutionary-laser-right p {
+        font-size: 18px;
+    }
+
+    .revolutionary-laser img {
+        margin-top: 0px;
+    }
 }
 
 
@@ -267,31 +376,70 @@
 
     .revolutionary-laser {
         padding: 60px 40px;
-        gap: 60px;
+        gap: 20px;
+    }
+
+    .revolutionary-button-wrapper .revolutionary-learnmorebtn {
+        padding: 8px 18px;
+        max-width: 100px;
+
+        gap: 6px;
+
+    }
+
+    .revolutionary-learnmorebtn .revolutionary-learnmorebtn-text {
+        font-size: 12px;
+    }
+
+    .revolutionary-button-wrapper .revolutionary-learnmorebtn img {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .revolutionary-button-wrapper .revolutionary-contactusbtn {
+        padding: 8px 14px;
+        max-width: 100px;
+        white-space: nowrap;
+        /* width: 100%; */
+
+        font-size: 12px;
+
+        gap: 6px;
+    }
+
+    .revolutionary-button-wrapper .revolutionary-contactusbtn img {
+        width: 10px;
+        height: 10px;
     }
 
     .top {
         flex-direction: column;
-        gap: 40px;
+        gap: 15px;
         align-items: flex-start;
     }
 
     .revolutionary-laser-left,
     .revolutionary-laser-right {
         width: 100%;
+        gap: 20px;
+    }
+
+    .revolutionary-laser-left h2 {
+        font-size: 18px;
     }
 
     .revolutionary-laser-left h1 {
-        font-size: 42px;
+        font-size: 30px;
     }
 
     .revolutionary-laser-right p {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .revolutionary-button-wrapper {
         flex-direction: row;
-        gap: 20px;
+        gap: 10px;
     }
 }
 
@@ -301,26 +449,35 @@
 
     .revolutionary-laser {
         padding: 50px 20px;
-        gap: 40px;
+        gap: 20px;
     }
 
+    .top {
+        gap: 10px;
+    }
+
+
     .revolutionary-laser-left h1 {
-        font-size: 32px;
+        font-size: 22px;
         line-height: 120%;
     }
 
     .revolutionary-laser-right p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .revolutionary-button-wrapper {
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 100%;
     }
 
     .revolutionary-button-wrapper button {
         width: 100%;
         justify-content: center;
+    }
+
+    .revolutionary-laser img {
+        margin-top: 0px;
     }
 }
 
@@ -331,11 +488,11 @@
 
 
     .revolutionary-laser-left h1 {
-        font-size: 26px;
+        font-size: 18px;
     }
 
     .revolutionary-laser-right p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 }
@@ -364,27 +521,29 @@
 
 
 /* Enhance your Practice with confidence RESPONSIVENESS */
-/* ENHANCE RESPONSIVENESS LARGE TABLETS <=1200px */
-@media (max-width: 1200px) {
+/* ENHANCE RESPONSIVENESS LARGE  <=1750px */
+@media (max-width: 1750px) {
+    .enhance-your-outer-container {
+        padding: 60px 30px;
+    }
+
+    .enhance-your-mid-mid-image {
+        max-width: 600px;
+
+        max-height: 600px;
+    }
+}
+
+
+/* ENHANCE RESPONSIVENESS LARGE  <=1440px */
+@media (max-width: 1440px) {
 
     .enhance-your-outer-container {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding: 40px 20px;
     }
 
-    .enhance-your-mid-container {
+    .enhance-your-top-container {
         gap: 20px;
-    }
-
-    .enhance-your-mid-left,
-    .enhance-your-mid-right,
-    .enhance-your-mid-mid-image {
-        width: 33.33%;
-    }
-
-    .enhance-your-mid-mid-image img {
-        max-width: 630px;
-        max-height: 630px;
     }
 
     .enhance-your-top-container h2 {
@@ -392,25 +551,103 @@
     }
 
     .enhance-your-top-container p {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .enhance-your-mid-container {
+        gap: 20px;
+    }
+
+    .enhance-your-mid-mid-image {
+        max-width: 500px;
+
+        max-height: 500px;
     }
 }
 
 
-/* ENAHNCE RESPONSIVENESS TABLET <= 992PX */
-@media (max-width: 992px) {
+
+
+/* ENHANCE RESPONSIVENESS LARGE TABLETS <=1200px */
+@media (max-width: 1280px) {
+
+    .enhance-your-outer-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 35px;
+    }
+
+    .enhance-your-top-container {
+        gap: 15px;
+    }
+
+    .enhance-your-mid-container {
+        gap: 20px;
+    }
+
+    .enhance-your-mid-left-upper,
+    .enhance-your-mid-left-bottom,
+    .enhance-your-mid-right-upper,
+    .enhance-your-mid-right-bottom {
+        gap: 15px;
+    }
+
+
+    .enhance-your-mid-mid-image {
+        /* max-width: 330px; */
+        height: 430px;
+    }
+
+    .enhance-your-top-container h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .enhance-your-top-container p {
+        font-size: 16px;
+    }
+
+    .enhance-your-mid-container h2 {
+        font-size: 20px;
+    }
+
+    .enhance-your-mid-container p {
+        font-size: 16px;
+    }
+}
+
+
+/* ENAHNCE RESPONSIVENESS TABLET <= 1050PX */
+@media (max-width: 1050px) {
 
     .enhance-your-outer-container {
         padding-left: 40px;
         padding-right: 40px;
+        gap: 30px;
     }
+
+    .enhance-your-top-container {
+        gap: 10px;
+        line-height: 27px;
+    }
+
+    .enhance-your-top-container h2 {
+        font-size: 30px;
+    }
+
 
     .enhance-your-mid-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 25px;
     }
+
+    .enhance-image-circle {
+        width: 60px;
+        height: 60px;
+    }
+
 
     .enhance-your-mid-left,
     .enhance-your-mid-right,
@@ -420,10 +657,11 @@
     }
 
     /* IMAGE CENTER */
-    .enhance-your-mid-mid-image img {
+    .enhance-your-mid-mid-image {
+        order: -1;
         max-width: 450px;
-        max-height: 450px;
-        height: auto;
+        max-height: 400px;
+        /* height: auto; */
     }
 
     /* spacing reduce */
@@ -434,11 +672,39 @@
     }
 
     .enhance-your-mid-container h2 {
-        font-size: 28px;
+        font-size: 18px;
+
     }
 
     .enhance-your-mid-container p {
-        font-size: 22px;
+        font-size: 14px;
+    }
+
+    .enhance-your-bottom .enhance-your-bottom-learnmore-btn {
+        padding: 10px 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .enhance-your-bottom-learnmore-btn a {
+        font-size: 14px;
+    }
+
+    .enhance-your-bottom .enhance-your-bottom-learnmore-btn img {
+        width: 12px;
+        height: 10px;
+    }
+
+    .enhance-your-bottom .enhance-your-bottom-contactus-btn {
+        padding: 10px 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .enhance-your-bottom .enhance-your-bottom-contactus-btn a {
+        font-size: 14px;
     }
 }
 
@@ -447,32 +713,36 @@
 @media (max-width: 768px) {
 
     .enhance-your-outer-container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
+    }
+
+    .enhance-your-top-container {
+        gap: 10px;
     }
 
     .enhance-your-top-container h2 {
-        font-size: 34px;
+        font-size: 26px;
         line-height: 120%;
     }
 
     .enhance-your-top-container p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
-    .enhance-your-mid-mid-image img {
+    .enhance-your-mid-mid-image {
         max-width: 300px;
         max-height: 300px;
     }
 
     .enhance-your-mid-container h2 {
-        font-size: 26px;
+        font-size: 17px;
     }
 
     .enhance-your-mid-container p {
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .enhance-your-bottom {
@@ -493,24 +763,24 @@
 @media (max-width: 480px) {
 
     .enhance-your-top-container h2 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .enhance-your-top-container p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    .enhance-your-mid-mid-image img {
+    .enhance-your-mid-mid-image {
         max-width: 220px;
         max-height: 220px;
     }
 
     .enhance-your-mid-container h2 {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .enhance-your-mid-container p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -544,8 +814,12 @@
 @media (max-width: 1200px) {
 
     .explore-our-cutting-outer-container {
-        gap: 60px;
+        gap: 30px;
         padding: 40px;
+    }
+
+    .explore-our-cutting-outer-container .explore-our-cutting-heading {
+        gap: 10px;
     }
 
     .explore-our-cutting-heading h2 {
@@ -554,19 +828,81 @@
 
     .explore-our-cutting-heading p {
         font-size: 20px;
+        margin: 0px;
     }
 
     .explore-our-cutting-mid-items .item-box {
-        height: 600px;
+        /* height: 600px; */
+        height: 500px;
+
     }
 
     .explore-our-cutting-mid-items .item-box .item-top-box h2 {
-        font-size: 36px;
+        font-size: 28px;
+        margin: 0px;
     }
 
     .explore-our-cutting-mid-items .item-box .item-top-box p {
-        font-size: 20px;
+        font-size: 17px;
     }
+
+    .item-box .item-top-box .item-learnmore-btn {
+        max-width: 120px;
+        padding: 10px 10px;
+        gap: 8px;
+    }
+
+
+
+    .item-box .item-top-box .item-learnmore-btn a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .item-box .item-top-box .item-learnmore-btn img {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Specific size for every image in the grid of explore-our-cutting-edge */
+
+
+    .explore-our-cutting-mid-items .item-1 .img-box img {
+        width: 402px;
+        height: 280.83px;
+
+    }
+
+    .explore-our-cutting-mid-items .item-2 .img-box img {
+        width: 399px;
+        height: 320.58px;
+
+    }
+
+    .explore-our-cutting-mid-items .item-3 .img-box img {
+        width: 490px;
+        height: 200.75px;
+
+    }
+
+    .explore-our-cutting-mid-items .item-4 .img-box img {
+        width: 554px;
+        height: 200.58px;
+
+    }
+
+    .explore-our-cutting-mid-items .item-5 .img-box img {
+        width: 537px;
+        height: 200.35px;
+
+    }
+
+    .explore-our-cutting-mid-items .item-6 .img-box img {
+        width: 174px;
+        height: 280.01px;
+
+    }
+
 }
 
 
@@ -610,12 +946,13 @@
 
     /* TEXT */
     .explore-our-cutting-mid-items .item-box .item-top-box h2 {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 120%;
     }
 
     .explore-our-cutting-mid-items .item-box .item-top-box p {
         font-size: 16px;
+        margin-bottom: 15px;
     }
 
 }
@@ -628,11 +965,11 @@
 
     .explore-our-cutting-outer-container {
         padding: 20px;
-        gap: 40px;
+        gap: 15px;
     }
 
     .explore-our-cutting-heading h2 {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 120%;
     }
 
@@ -644,6 +981,9 @@
         max-width: 280px;
     }
 
+    .explore-our-cutting-mid-items .item-box .item-top-box p {
+        font-size: 14px;
+    }
 }
 
 
@@ -651,7 +991,7 @@
 @media (max-width: 480px) {
 
     .explore-our-cutting-heading h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .explore-our-cutting-heading p {
@@ -670,11 +1010,28 @@
 
 /*+++++++++++ Discover How RESPONSIVENESS +++++++++++++++ */
 
+/* DISCOVER RESPONSIVENESS <= 1500px */
+@media (max-width: 1500px) {
+
+    .discover-how-outer-container {
+        padding: 60px 80px;
+    }
+
+    .discover-how-top {
+        margin-bottom: 20px;
+    }
+
+    .discover-how-top-right {
+        width: 50%;
+    }
+}
+
+
 /* DISCOVER RESPONSIVENESS <= 1200px */
 @media (max-width: 1200px) {
 
     .discover-how-outer-container {
-        padding: 60px 80px;
+        padding: 40px 60px;
     }
 
     .discover-how-top-left h2 {
@@ -692,13 +1049,14 @@
 @media (max-width: 992px) {
 
     .discover-how-outer-container {
-        padding: 60px 40px;
+        padding: 30px 40px;
     }
 
     .discover-how-top {
         flex-direction: column;
-        /* 🔥 stack */
-        gap: 40px;
+        /*  stack */
+        gap: 20px;
+        margin-bottom: 10px;
     }
 
     .discover-how-top-left,
@@ -707,7 +1065,7 @@
     }
 
     .discover-how-top-left h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .discover-how-top-right p {
@@ -721,7 +1079,7 @@
 @media (max-width: 768px) {
 
     .discover-how-outer-container {
-        padding: 40px 20px;
+        padding: 20px 20px;
     }
 
     .discover-how-top {
@@ -751,14 +1109,15 @@
 
     .feature {
         width: 100%;
+        gap: 10px;
     }
 
     .feature h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .feature p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
 }
@@ -796,17 +1155,38 @@
 
 
 /*+++++++ Support and Maintenance RESPONSIVENESS+++++++ */
+/* Support RESPONSIVENESS  laptop <=1500px   */
+@media (max-width: 1500px) {
+    .support-outer {
+        padding: 40px 80px;
+        gap: 40px;
+    }
+}
+
 /* Support RESPONSIVENESS  laptop <=1200px   */
 @media (max-width: 1200px) {
 
     .support-outer {
-        padding: 60px 80px;
-        gap: 60px;
+        padding: 40px 60px;
+        gap: 35px;
+    }
+
+    .support-heading h2 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .support-heading p {
+        font-size: 18px;
     }
 
     .support-mid {
         gap: 40px;
         padding: 0;
+    }
+
+    .support-mid p {
+        font-size: 16px;
     }
 }
 
@@ -815,7 +1195,7 @@
 @media (max-width: 992px) {
 
     .support-outer {
-        padding: 60px 40px;
+        padding: 40px 40px;
     }
 
     .support-heading h2 {
@@ -839,6 +1219,18 @@
         width: 100%;
         max-width: 500px;
     }
+
+    .support-mid p {
+        font-size: 20px;
+    }
+
+    .support-bottom-learnmore-btn,
+    .support-bottom-contactus-btn {
+        padding: 14px 10px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -856,27 +1248,31 @@
     }
 
     .support-heading p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .support-mid h2 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .support-mid p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /* BUTTONS STACK */
     .support-bottom {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
     }
 
     .support-bottom-learnmore-btn,
     .support-bottom-contactus-btn {
-        width: 100%;
-        max-width: 300px;
+        /* width: 100%; */
+        max-width: 180px;
+    }
+
+    .support-bottom a {
+        font-size: 16px;
     }
 }
 
@@ -907,7 +1303,7 @@
 
 /* Effective and Reliable Products for Professionals RESPONSIVENESS */
 
-/* EFFECTIVE RESPONSIVE LARGE <= 1200PX */
+/* EFFECTIVE RESPONSIVE LARGE <= 1400PX */
 @media (max-width: 1400px) {
 
     .er-video-container video {
@@ -928,6 +1324,10 @@
         /* background-color: aqua; */
     }
 
+    .overlay-upper-half .overlay-upper-right {
+        gap: 25px;
+    }
+
     .overlay-upper-half .overlay-upper-left h2 {
 
         font-size: 38px;
@@ -935,8 +1335,8 @@
     }
 
     .overlay-upper-half .overlay-upper-right p {
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 32px;
     }
 
     .overlay-lower-half>.lower-left>h2,
@@ -953,6 +1353,15 @@
         font-size: 26px;
         line-height: 30px;
     }
+
+    .lower-left,
+    .lower-mid,
+    .lower-right {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
 }
 
 
@@ -966,7 +1375,7 @@
     }
 
     .overlay-video .overlay-content-box {
-        gap: 30px;
+        gap: 60px;
     }
 
     .overlay-content-box .overlay-upper-half {
@@ -985,7 +1394,7 @@
     }
 
     .overlay-upper-half .overlay-upper-right p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     /* buttons stack */
@@ -1021,6 +1430,28 @@
         line-height: 25px;
     }
 
+    .upper-right-btn-wrapper .upper-right-learnmore-btn {
+        padding: 15px;
+    }
+
+    .upper-right-btn-wrapper .upper-right-learnmore-btn a {
+        font-size: 18px;
+    }
+
+    .upper-right-btn-wrapper .upper-right-contactus-btn {
+        padding: 15px;
+    }
+
+    .upper-right-btn-wrapper .upper-right-contactus-btn a {
+        font-size: 18px;
+    }
+
+    .lower-left,
+    .lower-mid,
+    .lower-right {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
 }
 
@@ -1033,7 +1464,7 @@
 
     .overlay-video .overlay-content-box {
         padding: 0 20px;
-        gap: 30px;
+        gap: 60px;
     }
 
     .overlay-upper-half .overlay-upper-right {
@@ -1041,7 +1472,10 @@
     }
 
     .overlay-content-box .overlay-upper-half {
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
     }
 
     .overlay-upper-half .overlay-upper-left h2 {
@@ -1050,7 +1484,7 @@
     }
 
     .overlay-upper-half .overlay-upper-right p {
-        font-size: 14px;
+        font-size: 20px;
 
     }
 
@@ -1065,7 +1499,10 @@
     .lower-left,
     .lower-mid,
     .lower-right {
-        width: 100%;
+        /* width: 100%; */
+
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .overlay-lower-half>.lower-left>h2,
@@ -1111,7 +1548,11 @@
 
 
     .er-video-container video {
-        min-height: 60vh;
+        min-height: 80vh;
+    }
+
+    .overlay-video .overlay-content-box {
+        gap: 50px;
     }
 
     .overlay-upper-half .overlay-upper-right {
@@ -1124,8 +1565,8 @@
     }
 
     .overlay-upper-half .overlay-upper-right p {
-        font-size: 8px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 26px;
     }
 
     /* ! YE NOT WORKING  */
@@ -1150,32 +1591,32 @@
     .overlay-lower-half>.lower-left>p,
     .overlay-lower-half>.lower-mid>p,
     .overlay-lower-half>.lower-right>p {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 18px;
     }
 
     .overlay-upper-right .upper-right-btn-wrapper {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 10px;
 
-        width: 100%;
+        /* width: 100%; */
     }
 
     .upper-right-btn-wrapper .upper-right-learnmore-btn {
-        /* max-width: 100px; */
-        max-width: 100%;
-        max-height: auto;
+        /* max-width: 100%; */
+        /* max-height: auto; */
         /* width: 60%; */
 
-        padding: 10px;
+        max-width: 150px;
+        padding: 6px;
 
         gap: 10px;
 
     }
 
     .upper-right-btn-wrapper .upper-right-learnmore-btn a {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .upper-right-btn-wrapper .upper-right-learnmore-btn img {
@@ -1184,19 +1625,14 @@
     }
 
     .upper-right-btn-wrapper .upper-right-contactus-btn {
-        /* max-width: 100px; */
-        padding: 10px;
-        max-width: 100%;
-        max-height: auto;
-        /* width: 60%; */
 
+        padding: 6px;
+        max-width: 150px;
         gap: 10px;
-
-
     }
 
     .upper-right-btn-wrapper .upper-right-contactus-btn a {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .upper-right-btn-wrapper .upper-right-contactus-btn img {
@@ -1436,7 +1872,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         gap: 40px;
     }
 
@@ -1472,7 +1909,7 @@
     .footer-top {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 30px;
 
     }
@@ -1484,7 +1921,7 @@
 
     .footer-top-mid-heading h3,
     .footer-top-right-heading h3 {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .footer-top-mid-content h3,
