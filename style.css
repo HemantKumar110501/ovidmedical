@@ -34,7 +34,7 @@ img{
 
     width: 100%;
     
-    padding: 20px 120px;
+    padding: 20px 160px;
     gap: 10px;
     
 }
@@ -42,6 +42,7 @@ img{
 .navbar2 .nav-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -78,7 +79,7 @@ img{
 .navbar2 .nav-contactus-btn {
     /* max-width: 144px; */
     border: none;
-    max-height: 52px;
+    /* max-height: 52px; */
     border-radius: 8px;
     padding: 18px 24px;
     background-color: #1E72BE;
@@ -537,10 +538,8 @@ img{
 .enhance-your-outer-container {
     width: 100%;
     gap: 60px;
-    padding-right: 160px;
-    padding-left: 160px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 160px;
+
 
     margin: 0 auto;
     /* background: cyan; */
@@ -554,9 +553,9 @@ img{
 }
 
 .enhance-your-top-container{
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
-    max-width: 832px;
+    /* max-width: 832px; */
 
     display: flex;
     flex-direction: column;
@@ -1177,10 +1176,7 @@ img{
 .support-outer {
     width: 100%;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 120px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding: 80px 160px;
     background: #ffffff;
     text-align: center;
 
@@ -1231,8 +1227,7 @@ img{
 
     display: flex;
     justify-content: space-between;
-    padding: 0px 40px;
-    /* gap: 40px; */
+
 
 }
 
@@ -1412,10 +1407,12 @@ img{
     top:0;
     left: 0;
     inset: 0;
+
+    padding: 80px 160px;
 }
 
 .overlay-video .overlay-content-box{
-    max-width: 1600px;
+    max-width: 1900px;
     width: 100%;
     
     position: relative;
@@ -1424,7 +1421,7 @@ img{
     transform: none;
     margin: auto;
     height: 100%;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     
     display: flex;
     flex-direction: column;
@@ -1643,13 +1640,13 @@ img{
 
 .connect-with-outer-container{
     max-width: 1900px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 80px 160px 80px 160px;
+    padding: 80px 160px;
 
 }
 
@@ -1696,7 +1693,7 @@ img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
     gap: 40px;
 
@@ -1776,9 +1773,9 @@ img{
 
 .footer-container {
     /* max-width: 1900px; */
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
-    padding: 80px 160px 80px 160px;
+    padding: 80px 160px;
 
     background-color: #E7F0F4;
 
