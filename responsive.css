@@ -211,6 +211,20 @@
         font-size: 20px;
     }
 
+    .carousel-context-box button{
+        max-width: 139px;
+        padding: 8px 12px;
+        white-space: nowrap;
+        font-size: 18px;
+        gap: 10px;
+        
+    }
+
+    .carousel-context-box button img{
+        max-width: 12px;
+        max-height: 12px;
+    }
+
     .carousel-counter{
         font-size: 19px;
     }
@@ -238,6 +252,20 @@
 
     .carousel-context-box p {
         font-size: 18px;
+    }
+
+    .carousel-context-box button{
+        max-width: 119px;
+        padding: 8px 10px;
+        white-space: nowrap;
+        font-size: 17px;
+        gap: 9px;
+        
+    }
+
+    .carousel-context-box button img{
+        max-width: 11px;
+        max-height: 11px;
     }
 
     .carousel-counter{
@@ -276,6 +304,11 @@
     .carousel-context-box button {
         padding: 9px 9px;
         font-size: 15px;
+    }
+
+    .carousel-context-box button img{
+        max-width: 10px;
+        max-height: 10px;
     }
 
     .carousel-buttons-wrapper {
@@ -328,6 +361,11 @@
     .carousel-context-box button {
         font-size: 16px;
         padding: 8px 12px;
+    }
+
+    .carousel-context-box button img{
+        max-width: 8px;
+        max-height: 8px;
     }
 
     .carousel-buttons-wrapper {
@@ -399,9 +437,8 @@
 
 
     .revolutionary-learnmorebtn {
-        padding: 14px 20px;
-        max-width: 160px;
-
+        padding: 12px 18px;
+        max-width: 130px;
     }
 
     .revolutionary-contactusbtn {
@@ -410,6 +447,17 @@
         white-space: nowrap;
         /* width: 100%; */
     }
+    .revolutionary-learnmorebtn .revolutionary-learnmorebtn-text{
+        font-size: 18px;
+    }
+
+    
+    .revolutionary-button-wrapper button img{
+        width: 14px;
+        height: 14px;
+    }
+
+
 
     .revolutionary-laser-right {
         gap: 20px;
@@ -439,6 +487,10 @@
         gap: 30px;
     }
 
+    .revolutionary-button-wrapper button img{
+        width: 11px;
+        height: 11px;
+    }
 
     .revolutionary-laser-left h1 {
         font-size: 40px;
@@ -476,11 +528,6 @@
         font-size: 12px;
     }
 
-    .revolutionary-button-wrapper .revolutionary-learnmorebtn img {
-        width: 10px;
-        height: 10px;
-    }
-
 
     .revolutionary-button-wrapper .revolutionary-contactusbtn {
         padding: 8px 14px;
@@ -493,7 +540,7 @@
         gap: 6px;
     }
 
-    .revolutionary-button-wrapper .revolutionary-contactusbtn img {
+    .revolutionary-button-wrapper button img{
         width: 10px;
         height: 10px;
     }
@@ -507,7 +554,7 @@
     .revolutionary-laser-left,
     .revolutionary-laser-right {
         width: 100%;
-        gap: 20px;
+        gap: 15px;
     }
 
     .revolutionary-laser-left h2 {
@@ -548,7 +595,7 @@
     }
 
     .revolutionary-laser-right p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .revolutionary-button-wrapper {
@@ -559,6 +606,11 @@
     .revolutionary-button-wrapper button {
         width: 100%;
         justify-content: center;
+    }
+
+    .revolutionary-button-wrapper button img {
+        width: 8px;
+        height: 8px;
     }
 
     .revolutionary-laser img {
@@ -616,9 +668,9 @@
     }
 
     .enhance-your-mid-mid-image {
-        max-width: 600px;
+        max-width: 450px;
 
-        max-height: 600px;
+        /* max-height: 600px; */
     }
 }
 
@@ -639,17 +691,30 @@
     }
 
     .enhance-your-top-container p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .enhance-your-mid-container {
         gap: 20px;
     }
 
-    .enhance-your-mid-mid-image {
-        max-width: 500px;
+    .enhance-your-mid-left-upper, .enhance-your-mid-left-bottom, .enhance-your-mid-right-upper, .enhance-your-mid-right-bottom{
+        gap: 22px;
+    }
 
-        max-height: 500px;
+    .enhance-your-mid-container h2 {
+        font-size: 26px;
+    }
+
+    .enhance-your-mid-container p{
+        font-size: 19px;
+    }
+
+
+    .enhance-your-mid-mid-image {
+        max-width: 350px;
+
+        /* max-height: 500px; */
     }
 }
 
@@ -676,13 +741,13 @@
     .enhance-your-mid-left-bottom,
     .enhance-your-mid-right-upper,
     .enhance-your-mid-right-bottom {
-        gap: 15px;
+        gap: 19px;
     }
 
 
     .enhance-your-mid-mid-image {
-        /* max-width: 330px; */
-        height: 430px;
+        max-width: 300px;
+        /* height: 430px; */
     }
 
     .enhance-your-top-container h2 {
@@ -692,6 +757,7 @@
 
     .enhance-your-top-container p {
         font-size: 16px;
+        text-align: center;
     }
 
     .enhance-your-mid-container h2 {
@@ -720,6 +786,9 @@
     .enhance-your-top-container h2 {
         font-size: 30px;
     }
+    .enhance-your-top-container p {
+        font-size: 19px;
+    }
 
 
     .enhance-your-mid-container {
@@ -727,6 +796,13 @@
         justify-content: center;
         align-items: center;
         gap: 25px;
+    }
+
+    .enhance-your-mid-left-upper,
+    .enhance-your-mid-left-bottom,
+    .enhance-your-mid-right-upper,
+    .enhance-your-mid-right-bottom {
+        gap: 15px;
     }
 
     .enhance-image-circle {
@@ -745,8 +821,8 @@
     /* IMAGE CENTER */
     .enhance-your-mid-mid-image {
         order: -1;
-        max-width: 450px;
-        max-height: 400px;
+        max-width: 280px;
+        max-height: 280px;
         /* height: auto; */
     }
 
@@ -758,12 +834,12 @@
     }
 
     .enhance-your-mid-container h2 {
-        font-size: 18px;
+        font-size: 26px;
 
     }
 
     .enhance-your-mid-container p {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .enhance-your-bottom .enhance-your-bottom-learnmore-btn {
@@ -813,7 +889,7 @@
     }
 
     .enhance-your-top-container p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .enhance-your-mid-mid-image {
@@ -821,16 +897,28 @@
         max-height: 300px;
     }
 
+    .enhance-image-circle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .enhance-your-mid-left-upper,
+    .enhance-your-mid-left-bottom,
+    .enhance-your-mid-right-upper,
+    .enhance-your-mid-right-bottom {
+        gap: 10px;
+    }
+
     .enhance-your-mid-container h2 {
-        font-size: 17px;
+        font-size: 19px;
     }
 
     .enhance-your-mid-container p {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .enhance-your-bottom {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -861,6 +949,13 @@
     .enhance-your-mid-mid-image {
         max-width: 220px;
         max-height: 220px;
+    }
+
+    .enhance-your-mid-left-upper,
+    .enhance-your-mid-left-bottom,
+    .enhance-your-mid-right-upper,
+    .enhance-your-mid-right-bottom {
+        gap: 7px;
     }
 
     .enhance-your-mid-container h2 {
@@ -1538,7 +1633,7 @@
     }
 
     .upper-right-btn-wrapper .upper-right-learnmore-btn {
-        padding: 15px;
+        padding: 10px;
     }
 
     .upper-right-btn-wrapper .upper-right-learnmore-btn a {
@@ -1546,7 +1641,7 @@
     }
 
     .upper-right-btn-wrapper .upper-right-contactus-btn {
-        padding: 15px;
+        padding: 10px;
     }
 
     .upper-right-btn-wrapper .upper-right-contactus-btn a {
@@ -1594,11 +1689,11 @@
         display: flex;
         flex-direction: column;
 
-        gap: 25px;
+        gap: 18px;
     }
 
     .overlay-upper-half .overlay-upper-left h2 {
-        font-size: 26px;
+        font-size: 30px;
 
     }
 
@@ -1622,12 +1717,13 @@
 
         padding-top: 10px;
         padding-bottom: 10px;
+        padding-left: 10px;
     }
 
     .overlay-lower-half>.lower-left>h2,
     .overlay-lower-half>.lower-mid>h2,
     .overlay-lower-half>.lower-right>h2 {
-        font-size: 40px;
+        font-size: 34px;
         line-height: 25px;
     }
 
